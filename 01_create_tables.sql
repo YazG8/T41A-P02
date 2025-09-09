@@ -11,9 +11,8 @@ CREATE TABLE profesor (
 );
 
 CREATE TABLE curso (
-    id_curso SERIAL PRIMARY KEY,
+    clave VARCHAR(50) PRIMARY KEY,
     periodo VARCHAR(10) NOT NULL,
-    clave VARCHAR(50) NOT NULL,
     nombre VARCHAR(100) NOT NULL,
     id_profesor INTEGER NOT NULL,
     FOREIGN KEY (id_profesor) REFERENCES profesor(id_profesor)
