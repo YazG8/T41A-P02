@@ -24,7 +24,6 @@ CREATE TABLE inscripcion (
     matricula VARCHAR(20) NOT NULL,
     periodo VARCHAR(10) NOT NULL,
     id_curso INTEGER NOT NULL,
-    periodo VARCHAR(10) NOT NULL,
     fecha_inscripcion DATE NOT NULL,
     FOREIGN KEY (matricula) REFERENCES alumno(matricula)
         ON DELETE CASCADE,
